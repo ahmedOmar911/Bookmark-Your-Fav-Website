@@ -1,0 +1,115 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f5e4d2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: #333;
+}
+
+.container {
+    text-align: center;
+    width: 90%;
+    max-width: 600px;
+}
+
+h1 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 0.5em;
+    display: inline-block;
+    position: relative;
+}
+
+h1::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 10px;
+    background-color: #68a046;
+    opacity: 0.5;
+    border-radius: 10px;
+    transition: all 0.8s;
+}
+
+h1:hover::before {
+    top: 0;
+    bottom: 0;
+    height: 100%;
+}
+
+.subtitle {
+    color: #68a046;
+    margin-bottom: 1em;
+}
+
+form {
+    background-color: #fdf4e3;
+    padding: 1em;
+    border-radius: 5px;
+}
+
+label {
+    display: block;
+    margin: 0.5em 0 0.2em;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="url"] {
+    width: 100%;
+    padding: 0.5em;
+    margin-bottom: 1em;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #d9534f;
+    color: white;
+    padding: 0.5em 1em;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #c9302c;
+}
+
+table {
+    width: 100%;
+    margin-top: 1em;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 0.5em;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+#bookmarksTable button {
+    padding: 0.4em 0.8em;
+    border-radius: 4px;
+    cursor: pointer;
+    color: #fff;
+}
+
+.visit-btn {
+    background-color: #68a046;
+}
+
+.delete-btn {
+    background-color: #d9534f;
+}
